@@ -1,0 +1,110 @@
+
+
+## **Installation Process**
+
+Follow the steps below to get the project up and running on your local machine.
+
+### **1. Install Python:**
+
+First, ensure that Python is installed on your system. If you haven't installed it yet:
+
+- Download Python from the official website: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+- **Install Python 3.x** (make sure to check the box **"Add Python to PATH"** during installation).
+- Verify the installation by running the following command in the terminal/command prompt:
+
+```bash
+python --version
+```
+
+If Python is installed correctly, it will return the version (e.g., Python 3.x.x).
+
+### **2. Install Dependencies:**
+
+#### **Install OpenCV, MediaPipe, and PyAutoGUI:**
+
+These are the essential libraries required for the project:
+
+1. **OpenCV**: For video capture and image processing.
+2. **MediaPipe**: For hand tracking and gesture recognition.
+3. **PyAutoGUI**: For controlling the mouse and keyboard.
+
+To install the required dependencies, use `pip`, Python's package installer.
+
+1. **Create a Virtual Environment (Optional but recommended):**
+
+   This keeps your project dependencies isolated.
+
+   - To create a virtual environment:
+
+   ```bash
+   python -m venv myenv
+   ```
+
+   - Activate the virtual environment:
+     - **Windows**:
+
+     ```bash
+     myenv\Scripts\activate
+     ```
+
+     - **macOS/Linux**:
+
+     ```bash
+     source myenv/bin/activate
+     ```
+
+2. **Install the required libraries** using `pip`:
+
+```bash
+pip install opencv-python mediapipe pyautogui
+```
+
+Alternatively, if you prefer to install all dependencies from a **requirements.txt** file (recommended for GitHub repos), you can create a `requirements.txt` file with the following content:
+
+```txt
+opencv-python
+mediapipe
+pyautogui
+```
+
+Then, install the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### **3. Verify Installation:**
+
+Once the dependencies are installed, you can check if the installation was successful by importing them in Python:
+
+```python
+import cv2
+import mediapipe as mp
+import pyautogui
+```
+
+If there are no errors, then everything is set up correctly.
+
+### **4. Run the Project:**
+
+Now that the dependencies are installed, you can run the project:
+
+1. Download or clone the repository:
+
+```bash
+git clone https://github.com/yourusername/gesture-control-game.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd gesture-control-game
+```
+
+3. Run the script:
+
+```bash
+python gesture_control.py
+```
+
+This will open the webcam and start the gesture control for your game.
