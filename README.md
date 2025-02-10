@@ -21,3 +21,34 @@ Technologies Used:
 OpenCV: For webcam video capture and image processing.
 MediaPipe: For hand tracking and gesture recognition.
 PyAutoGUI: For controlling the mouse and keyboard based on gestures.
+
+Usage Instructions:
+
+
+Ensure your webcam is connected and functional.
+
+Start the script and follow the on-screen instructions.
+
+5 fingers for accelerating, 0 fingers for braking.
+
+1 finger to move the cursor and 2 fingers to simulate a click.
+
+Prerequisites:
+
+
+Python 3.x
+
+OpenCV
+
+MediaPipe
+
+PyAutoGUI
+
+Future Improvements:
+
+
+More complex gesture support (e.g., zoom, rotate).
+
+Better performance tuning for smoother control.
+
+Integration with more games and applications.
